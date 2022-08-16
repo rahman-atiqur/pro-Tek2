@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Inspect Element</title>
+        <link rel="stylesheet" href="inspectelement.css" />
+    </head>
+
+    <body>
+        <div class="container">
+            <h3>Personal Information</h3>
+            <div class="main">
+                <form action="">
+                    <table>
+                        <tr>
+                            <td><label for="fname">First Name</label></td>
+                            <td>
+                                <input
+                                    type="text"
+                                    name="fname"
+                                    class="fname"
+                                    placeholder="Add your first name"
+                                />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="lname">Last Name</label></td>
+                            <td>
+                                <input
+                                    type="text"
+                                    name="lname"
+                                    class="lname"
+                                    placeholder="Add your last name"
+                                />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="bdate">Birthday</label></td>
+                            <td>
+                                <input type="date" name="bdate" class="bdate" />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="phone">Phone Number</label></td>
+                            <td>
+                                <input
+                                    type="tel"
+                                    name="phone"
+                                    class="phone"
+                                    placeholder="123-456-789"
+                                />
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="hobbies">Hobbies</label></td>
+                            <td>
+                                <input
+                                    type="checkbox"
+                                    name="travel"
+                                    class="hobbies"
+                                    value="Travelling"
+                                />
+                                <label for="travel">Travelling</label><br />
+
+                                <input
+                                    type="checkbox"
+                                    name="swim"
+                                    class="hobbies"
+                                    value="Swimming"
+                                />
+                                <label for="swim">Swimming</label><br />
+
+                                <input
+                                    type="checkbox"
+                                    name="Social"
+                                    class="hobbies"
+                                    value="Social Media"
+                                />
+                                <label for="Social">Social Media</label>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="message">Message</label></td>
+                            <td>
+                                <textarea name="message" id="message" cols="30" rows="7"></textarea>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="btn">
+                                <input type="submit" name="button" class="button" value="Submit" />
+                                <input type="reset" name="button" class="button" value="Reset" />
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

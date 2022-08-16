@@ -1,0 +1,17 @@
+div {
+    position : relative;  // Make position relative
+    height : 20%;
+    width : 20%;
+    text-align : center; //Align to center horizontally
+}
+p {
+    position : absolute; // Make position absolute
+    top:0;                // Give values of top, bottom,left, right to 0
+    bottom:0;
+    left:0;
+    right:0;
+    margin : auto;        // Set margin as auto
+    height : 1.2 em;
+    width : 20%;
+}
+48

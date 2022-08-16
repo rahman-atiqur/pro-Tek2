@@ -1,0 +1,42 @@
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-align: left;
+}
+
+li {
+    display: inline-block;
+    margin-right: 5px;
+    position: relative;
+}
+
+a {
+    background: #16a085;
+    color: #fff;
+    padding: 10px 25px;
+    display: block;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+a:hover {
+    background: #3498db;
+}
+
+ul ul {
+    position: absolute;
+    left: -99999px;  /* can put 0 then display:none & in hover should diaplay:block instead of left:0*/
+    top: 37;
+    width: 200px;
+}
+ul li:hover ul{left:0;}
+ul ul a{
+  border-radius: 0;
+  border-bottom: 1px solid #ddd;
+  background: #34495e;
+  transition: 0.5s;
+  
+}
+ul ul a:hover{ background: #8e44ad;}

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Basic structure</title>
+        <style>
+            body {
+                font-family: Arial;
+                width: 1560px;
+                /*height: 882px;*/
+                margin: auto;
+            }
+
+            h3 {
+                text-align: right;
+                padding-right: 10px;
+            }
+
+            h2 {
+                text-align: center;
+                padding-top: 10px;
+            }
+
+            #container {
+                border: 1px solid black;
+                width: 1560px;
+                height: 932px;
+            }
+
+            .header {
+                border: 5px solid rgb(247, 0, 255);
+                width: 1550px;
+                height: 150px;
+                margin-bottom: 10px;
+                text-align: center;
+            }
+
+            .main_body {
+                border: 1px solid rgb(250, 0, 0);
+                width: 1560px;
+                height: 710px;
+                margin-bottom: 20px;
+                font-weight: bold;
+            }
+
+            .left {
+                border: 5px solid blue;
+                width: 200px;
+                height: 700px;
+                display: inline-block;
+            }
+
+            .content {
+                border: 5px solid red;
+                width: 1120px;
+                height: 700px;
+                vertical-align: top;
+                display: inline-block;
+            }
+
+            .right {
+                border: 5px solid blue;
+                width: 200px;
+                height: 700px;
+                display: inline-block;
+            }
+
+            .footer {
+                border: 5px solid rgb(0, 255, 0);
+                height: 20px;
+                width: 1550px;
+                text-align: center;
+                font-weight: bold;
+                vertical-align: top;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="container">
+            <div class="header">
+                <h1>Header</h1>
+            </div>
+
+            <div class="main_body">
+                <div class="left">
+                    <h3>Sidebar<br />Left</h3>
+                </div>
+                <div class="content">
+                    <h2>Content</h2>
+                </div>
+                <div class="right">
+                    <h3>Sidebar<br />Right</h3>
+                </div>
+            </div>
+
+            <div class="footer">Footer</div>
+        </div>
+    </body>
+</html>

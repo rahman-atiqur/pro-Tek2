@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Poster-Be Productive</title>
+        <link rel="stylesheet" href="poster.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+
+    <body>
+        <div id="main">
+            <img
+                class="imgsize"
+                src="businessman-hand-holding-hourglass-time-management-concept.jpg"
+                alt="Picture of a businessman time management concept"
+            />
+
+            <div id="logo">
+                <img
+                    class="logosize"
+                    src="pro-tek-it-consulting.png"
+                    alt="Logo of Pro-Tek IT consulting"
+                />
+            </div>
+            <div class="sublogo">
+                <h5>Tecnology</h5>
+                <h5 class="hb">Innovation</h5>
+                <h5>Implementation</h5>
+            </div>
+            <div id="slogan">
+                <p>
+                    Don&apos;t Be Busy,<br /><em><b>Be Productive.</b> </em> <br />Your Only
+                    <br />Limit Is <em><b>You</b></em
+                    >.
+                </p>
+            </div>
+            <div id="btn">
+                <button id="show" title="click on logo or image or on any of motto text">
+                    Click any Element
+                </button>
+            </div>
+        </div>
+
+        <script>
+            $(document).ready(function () {
+                $("p").click(function () {
+                    $(this).hide(2000);
+                    document.getElementById("show").innerHTML = "Click me to show again";
+                });
+
+                $("img").click(function () {
+                    $(this).hide(1000);
+                    document.getElementById("show").innerHTML = "Click me to show again";
+                    document.getElementById("slogan").style.color = "antiquewhite";
+                    document.getElementById("main").style.border = "1px dotted black";
+                });
+
+                $("#logo").click(function () {
+                    $(this).hide(1000);
+                    $(".sublogo").hide(1000);
+                    document.getElementById("show").innerHTML = "Click me to show again";
+                });
+                $(".sublogo").click(function () {
+                    $(this).hide(1000);
+                    $("#logo").hide(1000);
+                    document.getElementById("show").innerHTML = "Click me to show again";
+                });
+
+                $("#show").click(function () {
+                    $("img").show(2000);
+                    $("#logo").show(1000);
+                    $(".sublogo").show(1000);
+                    $("p").show(3000);
+                    document.getElementById("main").style.border = "none";
+                    document.getElementById("slogan").style.color = "white";
+                    document.getElementById("show").innerHTML = "Click any Element";
+                });
+            });
+        </script>
+    </body>
+</html>

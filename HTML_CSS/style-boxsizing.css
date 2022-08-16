@@ -1,0 +1,60 @@
+ /* case-2 ----------This for all div box sizing
+ *, *::after, *::before {box-sizing: border-box;}
+ -----------------------------------------------*/
+
+ /* case 3 ---- for flexible work in any div ------*/
+ *, *::after, *::before {box-sizing: inherit;}
+ html{
+     box-sizing: border-box;
+ }
+/*----------------------------------------------*/
+
+body{
+    background: #dff9fb;
+    color: #262626;
+    font-family: sans-serif;
+    font-size: 1em;
+}
+div{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+p{
+    color: #fff;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+.header{
+    background-color: #b71540;
+    height: 200px;
+    width: 400px;
+
+    /* for case 1 without box-sizing*/
+    padding: 20px;
+    border: 10px solid#000 
+    
+}
+.content{
+    background: #0c2461;
+    height: 200px;
+    width: 400px;
+    border: 10px solid#000;
+
+    /* for case 3 box-sizing: inherit-----*/
+
+    box-sizing: content-box;
+    padding: 20px;
+}
+.footer{
+    background: #079992;
+    height: 200px;
+    width: 400px;
+    
+    /* for case 2 
+    box-sizing: border-box;*/
+    padding: 50px;
+    border: 10px solid #000;
+
+}
